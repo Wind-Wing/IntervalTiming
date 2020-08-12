@@ -15,7 +15,7 @@ _color_list = ['blue', 'red', 'black', 'yellow', 'pink']
 
 
 class Runner(object):
-    def __init__(self, rule_name=None, model=None, hp=None, model_dir=None, is_cuda=True, noise_on=True, mode='test', **kwargs):
+    def __init__(self, rule_name=None, model=None, hp=None, model_dir=None, is_cuda=False, noise_on=True, mode='test', **kwargs):
         tools.mkdir_p(model_dir)
         self.model_dir = model_dir
 

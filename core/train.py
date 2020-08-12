@@ -216,7 +216,7 @@ def get_perf_decision_no_timing(output, target_choice, fix_start, fix_end, fix_s
 
 
 class Trainer(object):
-    def __init__(self, rule_name=None, model=None, hp=None, model_dir=None, is_cuda=True, **kwargs):
+    def __init__(self, rule_name=None, model=None, hp=None, model_dir=None, is_cuda=False, **kwargs):
         tools.mkdir_p(model_dir)
         self.model_dir = model_dir
 

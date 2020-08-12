@@ -7,7 +7,7 @@ from . import tools
 
 class TaskDataset(Dataset):
 
-    def __init__(self, rule_name, hp, mode='train', is_cuda=True, **kwargs):
+    def __init__(self, rule_name, hp, mode='train', is_cuda=False, **kwargs):
         '''provide name of the rules'''
         self.rule_name = rule_name
 

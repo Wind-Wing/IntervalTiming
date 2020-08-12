@@ -101,7 +101,7 @@ def get_perf_spatial_reproduction(output, target_dir, fix_start, fix_end, fix_st
 
 
 class Trainer(object):
-    def __init__(self, rule_name=None, model=None, hp=None, model_dir=None, is_cuda=True, **kwargs):
+    def __init__(self, rule_name=None, model=None, hp=None, model_dir=None, is_cuda=False, **kwargs):
         tools.mkdir_p(model_dir)
         self.model_dir = model_dir
 

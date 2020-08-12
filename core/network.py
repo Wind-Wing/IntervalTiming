@@ -13,7 +13,7 @@ from . import tools
 
 # Create Network
 class RNN(nn.Module):
-    def __init__(self, hp, is_cuda=True, **kwargs):
+    def __init__(self, hp, is_cuda=False, **kwargs):
         super(RNN, self).__init__()
 
         input_size = hp['n_input']

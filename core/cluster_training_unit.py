@@ -20,7 +20,7 @@ def train_model(rule_name, w2_reg, r2_reg, index, **kwargs):
         hp['l2_firing_rate'] = r2_reg
         hp['l2_weight'] = w2_reg
 
-        trainerObj = train.Trainer(model_dir=local_folder_name, rule_name=rule_name, hp=hp, **kwargs, is_cuda=True)
+        trainerObj = train.Trainer(model_dir=local_folder_name, rule_name=rule_name, hp=hp, **kwargs, is_cuda=False)
         stat = trainerObj.train(max_samples=1e7, display_step=200)
 
         if stat is 'OK':

@@ -190,7 +190,7 @@ class Trainer(object):
     '''
     rule_name_list: [rule1, rule2]
     '''
-    def __init__(self, rule_name_list=None, model=None, hp=None, model_dir=None, is_cuda=True, **kwargs):
+    def __init__(self, rule_name_list=None, model=None, hp=None, model_dir=None, is_cuda=False, **kwargs):
         tools.mkdir_p(model_dir)
         self.model_dir = model_dir
 

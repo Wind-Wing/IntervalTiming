@@ -15,7 +15,7 @@ class TrainStepper(object):
         hp: a dictionary or None
     """
 
-    def __init__(self, model, hp, is_cuda=True):
+    def __init__(self, model, hp, is_cuda=False):
 
         if is_cuda:
             self.device = torch.device("cuda")
