@@ -4,11 +4,11 @@ import os
 import sys
 
 #the number of threads that run simultaneously
-num_worker_threads = 2
+num_worker_threads = 1
 
 
 def train_model(rule_name, w2_reg, r2_reg, index):
-    run_cmd = 'python core/cluster_training_unit.py '+rule_name+' '+str(w2_reg)+' '+str(r2_reg)+' '+str(index)
+    run_cmd = 'python3 core/cluster_training_unit.py '+rule_name+' '+str(w2_reg)+' '+str(r2_reg)+' '+str(index)
     os.system(run_cmd)
 
 
@@ -55,32 +55,32 @@ def set_parameter_main():
 
 set_parameter_main()
 '''
-# to train the network on a task, set the argument of the functio to be the same of the task
+# to train the network on a task, set the argument of the function to be the same of the task
 set_parameter_list('interval_production', indexes=[0])
-set_parameter_list('interval_comparison', indexes=[0])
-
-set_parameter_list('timed_spatial_reproduction', indexes=[0])
-set_parameter_list('timed_spatial_reproduction_broad_tuning', indexes=[0])
-
-set_parameter_list('timed_decision_making', indexes=[0])
-
-set_parameter_list('spatial_reproduction', indexes=[0])
-set_parameter_list('spatial_reproduction_broad_tuning', indexes=[0])
-set_parameter_list('spatial_reproduction_variable_delay', indexes=[0])
-
-set_parameter_list('spatial_comparison', indexes=[0])
-set_parameter_list('spatial_comparison_broad_tuning', indexes=[0])
-set_parameter_list('spatial_comparison_variable_delay', indexes=[0])
-
-set_parameter_list('spatial_change_detection', indexes=[0])
-
-set_parameter_list('spatial_change_detection_broad_tuning', indexes=[0])
-set_parameter_list('spatial_change_detection_variable_delay', indexes=[0])
-
-set_parameter_list('decision_making', indexes=[0])
-set_parameter_list('decision_making_variable_delay', indexes=[0])
-set_parameter_list('ctx_decision_making', indexes=[0])
-set_parameter_list('ctx_decision_making_variable_delay', indexes=[0])
+# set_parameter_list('interval_comparison', indexes=[0])
+#
+# set_parameter_list('timed_spatial_reproduction', indexes=[0])
+# set_parameter_list('timed_spatial_reproduction_broad_tuning', indexes=[0])
+#
+# set_parameter_list('timed_decision_making', indexes=[0])
+#
+# set_parameter_list('spatial_reproduction', indexes=[0])
+# set_parameter_list('spatial_reproduction_broad_tuning', indexes=[0])
+# set_parameter_list('spatial_reproduction_variable_delay', indexes=[0])
+#
+# set_parameter_list('spatial_comparison', indexes=[0])
+# set_parameter_list('spatial_comparison_broad_tuning', indexes=[0])
+# set_parameter_list('spatial_comparison_variable_delay', indexes=[0])
+#
+# set_parameter_list('spatial_change_detection', indexes=[0])
+#
+# set_parameter_list('spatial_change_detection_broad_tuning', indexes=[0])
+# set_parameter_list('spatial_change_detection_variable_delay', indexes=[0])
+#
+# set_parameter_list('decision_making', indexes=[0])
+# set_parameter_list('decision_making_variable_delay', indexes=[0])
+# set_parameter_list('ctx_decision_making', indexes=[0])
+# set_parameter_list('ctx_decision_making_variable_delay', indexes=[0])
 
 
 #####################################################################

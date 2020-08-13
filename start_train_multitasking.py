@@ -6,7 +6,7 @@ num_worker_threads = 2
 
 
 def train_model(rule_group, w2_reg, r2_reg, index):
-    run_cmd = 'python core_multitasking/cluster_training_unit.py '+rule_group+' '+str(w2_reg)+' '+str(r2_reg)+' '+str(index)
+    run_cmd = 'python3 core_multitasking/cluster_training_unit.py '+rule_group+' '+str(w2_reg)+' '+str(r2_reg)+' '+str(index)
     os.system(run_cmd)
 
 

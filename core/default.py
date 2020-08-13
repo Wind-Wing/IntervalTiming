@@ -84,7 +84,7 @@ def get_default_hp(rule_name, random_seed=None):
         # discretization time step/time constant
         'alpha': 1,
         # initial standard deviation of non-diagonal recurrent weights
-        'initial_std': 0.3,#0.25,#0.27,#0.3,
+        'initial_std': 0.25,#0.25,#0.27,#0.3,
         # recurrent noise
         'sigma_rec': 0.05,
         # input noise
