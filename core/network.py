@@ -7,6 +7,7 @@ from torch import nn
 import os
 import math
 import numpy as np
+import ipdb
 
 from . import tools
 
@@ -166,7 +167,7 @@ class RNN(nn.Module):
         self._1 = torch.tensor(1., device=self.device)
 
     def forward(self, inputs, initial_state):
-
+        # ipdb.set_trace()
         """Most basic RNN: output = new_state = W_input * input + W_rec * act(state) + B + noise """
 
         # shape: (batch_size, hidden_size)
